@@ -93,3 +93,87 @@ ul li {
   padding-left: 20px;
   margin-top: 20px;
 }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+}
+
+footer .socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+footer .socials li a {
+  color: white;
+  font-weight: bold;
+}
+
+footer .socials li a:hover {
+  color: #3498db;
+}
+
+/* Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  color: #3498db;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode section {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+  color: #f1f1f1;
+}
+
+body.dark-mode p {
+  color: #ccc;
+}
+
+body.dark-mode a {
+  color: #90caf9;
+}
+
+body.dark-mode #about-me {
+  background-color: #2c3e50;
+}
+
+body.dark-mode #highlight {
+  background-color: #2a2a2a;
+  border-left-color: #90caf9;
+}
+
+body.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #ccc;
+}
+
+body.dark-mode footer .socials li a {
+  color: #90caf9;
+}

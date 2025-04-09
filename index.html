@@ -10,6 +10,10 @@
 </head>
 
 <body>
+  <button class="theme-toggle" onclick="toggleTheme()" id="theme-icon" title="Toggle Theme">🌙</button>
+
+
+
 <section id="about-me">
   <h2>About Me</h2>
   <p>Hi, I'm Ihedioha Ifeyinwa, an aspiring Outreachy intern and an active contributor to the Fedora Diversity, Equity, and Inclusion (DEI) team. I'm passionate about open-source software and helping strengthen the open-source community. I believe in inclusivity and accessibility and work towards ensuring that everyone has the opportunity to contribute meaningfully to the community.</p>
@@ -157,5 +161,23 @@
   <p>Blog Post: 
   <a href="https://medium.com/@ihediohaifeyinwa/strengthening-open-source-communities-my-journey-e841173e9fe2" target="_blank">Read the Post</a></p>
 </section>
+
+<footer>
+    <p>Connect with me:</p>
+    <a href="https://www.linkedin.com/in/ifeyinwa-ihedioha" target="_blank">LinkedIn</a> |
+    <a href="https://medium.com/@ihediohaifeyinwa" target="_blank">Medium</a> |
+    <a href="mailto:ihediohaifeyinwa@gmail.com">Gmail</a>
+  </footer>
+
+  
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById("theme-icon");
+      body.classList.toggle("dark-mode");
+
+      icon.textContent = body.classList.contains("dark-mode") ? "🌞" : "🌙";
+    }
+  </script>
 </body>
 </html>
