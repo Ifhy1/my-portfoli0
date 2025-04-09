@@ -1,14 +1,14 @@
 
 body {
-  font-family: 'Georgia', 'Helvetica';
+  font-family: 'Georgia', 'Helvetica', sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
+  color: #333;
   margin: 0;
   padding: 0;
-  color: #333;
   font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 
 section {
   width: 80%;
@@ -18,8 +18,8 @@ section {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
-
 
 h2, h3, h4 {
   color: #2c3e50;
@@ -45,13 +45,11 @@ h4 {
   color: #34495e;
 }
 
-
 p {
   margin-bottom: 15px;
   font-size: 1em;
   color: #555;
 }
-
 
 a {
   color: #3498db;
@@ -62,7 +60,6 @@ a:hover {
   text-decoration: underline;
 }
 
-
 ul {
   list-style-type: none;
   padding-left: 0;
@@ -72,18 +69,18 @@ ul li {
   margin-bottom: 15px;
 }
 
-
 #about-me {
   background-color: #ecf0f1;
   padding: 20px;
   border-radius: 8px;
-  color: white;
 }
-
 
 #contributions {
   background-color: #fff;
+}
 
+body.dark-mode #contributions {
+  background-color: #1e1e1e;
 }
 
 
@@ -94,11 +91,14 @@ ul li {
   margin-top: 20px;
 }
 
+
 footer {
   text-align: center;
   padding: 20px;
   background-color: #2c3e50;
   color: white;
+  font-weight: 600;
+  font-size: 25px;
 }
 
 footer .socials {
@@ -118,7 +118,7 @@ footer .socials li a:hover {
   color: #3498db;
 }
 
-/* Toggle Button */
+
 .theme-toggle {
   position: fixed;
   top: 20px;
@@ -135,7 +135,7 @@ footer .socials li a:hover {
   color: #3498db;
 }
 
-/* Dark Mode Styles */
+
 body.dark-mode {
   background-color: #121212;
   color: #e0e0e0;
